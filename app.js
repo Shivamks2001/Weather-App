@@ -1,3 +1,5 @@
+let confirmation = confirm("Turn on your Location, already done then Ignore.");
+
 let weatherObject = {
     temp : 0,
     description: "",
@@ -8,17 +10,25 @@ let weatherObject = {
 }
 
 // check if browser supports geolocation
-if("geolocation" in navigator)
+if(confirmation)
 {
-    navigator.geolocation.getCurrentPosition(function(pos)
+    if("geolocation" in navigator)
     {
-        let coordinate = pos.coords;
-        mainFunction(coordinate);
-    });
+        navigator.geolocation.getCurrentPosition(function(pos)
+        {
+            let coordinate = pos.coords;
+            mainFunction(coordinate);
+        });
+    }
+    else
+    {
+        alert("Browser doesn't Support Geolocation");
+    }
 }
+
 else
 {
-    window.alert("Browser doesn't Support Geolocation");
+    alert("Access Denied");
 }
 
 function mainFunction(coordinate)
