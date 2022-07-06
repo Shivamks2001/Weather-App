@@ -1,0 +1,139 @@
+body
+{
+    text-align: center;
+    margin: 0;
+}
+
+.my-container-fluid
+{
+    padding: 3% 30%;
+}
+
+.weather-data
+{
+    padding: 0;
+}
+
+.my-img
+{
+    margin-top: 3%;
+    width: 33%;
+}
+
+.temp-text
+{
+    margin: 5% 30% 1%;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.description
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.place
+{
+    font-size: 1.1rem;
+}
+
+@media (max-width : 915px)
+{
+    .container-fluid
+    {
+        padding: 5%;
+    }
+
+    .temp-text
+    {
+        margin: 5% 0 1%;
+        font-size: 7rem;
+        font-weight: 500;
+    }
+
+    .my-img
+    {
+        margin: 15% 0 5%;
+        width: 55%;
+    }
+
+    .description
+    {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    h3
+    {
+        font-size: 5rem;
+    }
+
+    .place
+    {
+        font-size: 2rem;
+        padding-bottom: 5%;
+    }
+}
+
+@media (max-width : 600px) {
+    .container-fluid
+    {
+        padding: 5%;
+    }
+
+    .temp-text
+    {
+        margin: 5% 0 1%;
+        font-size: 5rem;
+        font-weight: 500;
+    }
+
+    .my-img
+    {
+        margin: 15% 0 5%;
+        width: 50%;
+    }
+
+    .description
+    {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    h3
+    {
+        font-size: 3rem;
+    }
+
+    .place
+    {
+        font-size: 1.75rem;
+        padding-bottom: 5%;
+    }
+
+}
+
+@media (max-width : 300px)
+{
+    h3 
+    {
+        font-size: 2rem;
+    }
+    .temp-text
+    {
+        font-size: 3rem;
+    }
+
+    .description
+    {
+        font-size: 2rem;
+    }
+
+    .place
+    {
+        font-size: 1.25rem;
+        padding-bottom: 0;
+    }
+}
